@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beetrack | Front End Test</title>
+    <!-- React CDN -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <!-- Babel JSX compiler -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- contenerdor centrado -->
+    <div class="container--custom">
+        <!-- CSS Grid -->
+        <div class="wrapper">
+            <!-- título -->
+            <header class="title">
+                <p>Test <span>Beetrack</span></p>
+            </header>
+            <!-- /título -->
+            <!-- busqueda y nuevos contactos -->
+            <div class="wrapper sub-wrapper titulo">
+                <!-- barra de busqueda -->
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar contacto...">
+                </div>
+                <!-- /barra de busqueda -->
+                <!-- boton nuevo contacto -->
+                <div class="new-contact">
+                    <button class="btn-primary">
+                        <i class="fas fa-plus-circle fa-lg"></i> Nuevo Contacto
+                    </button>
+                </div>
+                <!-- /boton nuevo contacto -->
+            </div>
+            <!-- busqueda y nuevos contactos -->
+            <!--  mensajes -->
+            <div class="wrapper sub-wrapper--secondary mensajes">
+                <div class="nombre">Nombre</div>
+                <div class="descripcion">Descripción</div>
+            </div>
+            <div class="wrapper sub-wrapper--secondary">
+              <!-- contactos -->
+              <ul class="nombre nombre-lista" id="users">
+                <li class="contacto"></li>
+              </ul>
+              <!-- /contactos -->
+              <!-- descripción -->
+              <ul class="descripcion descripcion-lista" id="description">
+                <li class="texto"></li>
+              </ul>      
+              <!-- /descripción -->
+            </div>
+            <!--  /mensajes -->
+        </div>
+        <!-- /CSS Grid -->
+    </div>
+    <!-- /contenerdor centrado -->
+    <script type="text/babel">
+        ReactDOM.render(
+        <li class="texto">Hola Mundo!</li>, document.getElementById('description'); 
+        <li class="texto">Chao Mundo!</li>, document.getElementById('users') );
+        
+    </script>
+</body>
+
+</html>
