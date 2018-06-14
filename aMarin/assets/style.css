@@ -157,13 +157,12 @@ i.fa-search {
 }
 
 .nombre-lista {
-    min-height: 60px;
-    max-height: 90px;
+    height: 90px;
     margin: 0;
     padding: 0;
 }
 
-.contacto {
+.user {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     height: 100%;
     width: 100%;
